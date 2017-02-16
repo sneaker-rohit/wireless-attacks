@@ -1,4 +1,7 @@
 # Wireless Attacks
 
-Learn about some of the most common vulnerabilities in wireless networks. The information and the scripts available here should not be misused in any terms. This information is only for educational purposes.
+
+I have created this repository to improve my understanding and in an effort to automate the attacks by creating some shell scripts. You might find information about some of the most common vulnerabilities in wireless networks. Description of the attack and the script to perform the attack can be found in the folders. 
+
+1. Deauthentication Attack -> ```deauth-attack ```   
 

